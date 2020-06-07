@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.API", "API\CompanyName.MyMeetings.API\CompanyName.MyMeetings.API.csproj", "{49D08B64-AC8E-4607-820F-8A0B989CFD33}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0} = {7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D} = {B07B44C6-83D1-4636-8F69-21021F6BE56D}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{E91D4BE3-61FE-441C-A227-29850D414216}"
 EndProject
@@ -118,6 +122,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.Modules.Venues.Domain.UnitTests", "Modules\Venues\Tests\UnitTests\CompanyName.MyMeetings.Modules.Venues.Domain.UnitTests.csproj", "{BF7433AB-F918-44E0-8427-8D698C0CEDCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.Modules.Venues.ArchTests", "Modules\Venues\Tests\ArchTests\CompanyName.MyMeetings.Modules.Venues.ArchTests.csproj", "{DC626AA3-FC0D-485B-AE5F-E47DC85CDF03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.Modules.Venues.IntegrationTests", "Modules\Venues\Tests\IntegrationTests\CompanyName.MyMeetings.Modules.Venues.IntegrationTests.csproj", "{0CF7597B-596B-45EE-8E31-8F9778EEE3AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.Modules.Venues.Application", "Modules\Venues\Application\CompanyName.MyMeetings.Modules.Venues.Application.csproj", "{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.MyMeetings.Modules.Venues.Infrastructure", "Modules\Venues\Infrastructure\CompanyName.MyMeetings.Modules.Venues.Infrastructure.csproj", "{B07B44C6-83D1-4636-8F69-21021F6BE56D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -286,6 +296,18 @@ Global
 		{DC626AA3-FC0D-485B-AE5F-E47DC85CDF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC626AA3-FC0D-485B-AE5F-E47DC85CDF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC626AA3-FC0D-485B-AE5F-E47DC85CDF03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF7597B-596B-45EE-8E31-8F9778EEE3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF7597B-596B-45EE-8E31-8F9778EEE3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF7597B-596B-45EE-8E31-8F9778EEE3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF7597B-596B-45EE-8E31-8F9778EEE3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -342,6 +364,9 @@ Global
 		{E8EE4C0F-03CB-49C7-9228-71B3DA757C69} = {2C27347C-5703-47BE-B791-16234399250F}
 		{BF7433AB-F918-44E0-8427-8D698C0CEDCF} = {E8EE4C0F-03CB-49C7-9228-71B3DA757C69}
 		{DC626AA3-FC0D-485B-AE5F-E47DC85CDF03} = {E8EE4C0F-03CB-49C7-9228-71B3DA757C69}
+		{0CF7597B-596B-45EE-8E31-8F9778EEE3AF} = {E8EE4C0F-03CB-49C7-9228-71B3DA757C69}
+		{7A5BB0BC-1EA8-4C92-8AF2-02FB5D3F88A0} = {2C27347C-5703-47BE-B791-16234399250F}
+		{B07B44C6-83D1-4636-8F69-21021F6BE56D} = {2C27347C-5703-47BE-B791-16234399250F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B94C21A-AA6D-4D82-963E-C69C0353B938}
