@@ -36,6 +36,10 @@ CREATE SCHEMA [users]
 
 
 GO
+CREATE SCHEMA [venues]
+    AUTHORIZATION [dbo];
+
+GO
 PRINT N'Creating [administration].[InternalCommands]...';
 
 
@@ -539,6 +543,13 @@ CREATE TABLE [users].[OutboxMessages] (
     CONSTRAINT [PK_users_OutboxMessages_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+GO
+CREATE TABLE [venues].[Venues] (
+    [Id]            UNIQUEIDENTIFIER NOT NULL,
+    [Name]          VARCHAR (255)    NOT NULL,
+    [Address]       VARCHAR (255)    NOT NULL,
+    [Capacity]      INTEGER          NOT NULL,
+);
 
 GO
 PRINT N'Creating [meetings].[v_MeetingGroups]...';
