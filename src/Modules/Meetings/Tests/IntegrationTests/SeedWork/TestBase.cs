@@ -1,9 +1,4 @@
-using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
-using CompanyName.MyMeetings.BuildingBlocks.Application.Emails;
+﻿using CompanyName.MyMeetings.BuildingBlocks.Application.Emails;
 using CompanyName.MyMeetings.BuildingBlocks.Domain;
 using CompanyName.MyMeetings.BuildingBlocks.Infrastructure.Emails;
 using CompanyName.MyMeetings.Modules.Meetings.Application.Contracts;
@@ -14,6 +9,11 @@ using MediatR;
 using NSubstitute;
 using NUnit.Framework;
 using Serilog;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CompanyName.MyMeetings.Modules.Meetings.IntegrationTests.SeedWork
 {
